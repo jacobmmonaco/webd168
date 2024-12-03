@@ -1,0 +1,21 @@
+caption {
+  caption-side: top;
+}
+img {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+.table-dark {
+  --bs-table-bg: #0d6efd;
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
