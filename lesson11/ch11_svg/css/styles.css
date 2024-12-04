@@ -1,0 +1,103 @@
+/* CSS Document */
+body {
+  height: 100%;
+  width: 85%;
+  margin: 1em auto 0;
+  font: 90%/1.5 Georgia, "Times New Roman", serif;
+  background-image: linear-gradient(to top, lightblue, white);
+}
+
+h1 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0d1f59;
+  text-align: center;
+}
+
+button {
+  text-transform: uppercase;
+  background-color: lightblue;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+.buttons {
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.blue-eyes .eye-color {
+  fill: #175282;
+}
+
+/* Cat base style */
+.cat {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Adjust mouth appearance */
+.mouth {
+  transition: transform 0.3s ease-in-out;
+}
+
+.mouth-down {
+  transform: scaleY(-1); /* Flip vertically */
+  transform-origin: center; /* Ensure the rotation happens around the center */
+}
+
+/* Continuous rotation animation */
+.rotate-clockwise {
+  animation: rotate 2s linear infinite;
+}
+
+/* Keyframes for smooth rotation */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Container for paragraphs */
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.container p {
+  flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cat {
+    width: 100%;
+    height: auto;
+  }
+}
