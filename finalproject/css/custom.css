@@ -1,0 +1,27 @@
+.logo-img {
+  max-width: 275px;
+}
+caption {
+  caption-side: top;
+}
+img {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+img:hover {
+  opacity: 1;
+}
+.container-lg {
+  max-width: 1300px;
+}
+
+.table-dark {
+  --bs-table-bg: #1a2a41;
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
